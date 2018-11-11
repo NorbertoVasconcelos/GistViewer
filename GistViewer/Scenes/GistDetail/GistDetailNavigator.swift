@@ -28,6 +28,9 @@ class DefaultGistDetailNavigator: GistDetailNavigator {
     }
     
     func toGists() {
-        navigationController.dismiss(animated: true)
+        if let gistsDetailVC = navigationController.topViewController as? GistDetailViewController {
+            navigationController.delegate = gistsDetailVC
+        }
+        navigationController.popViewController(animated: true)
     }
 }

@@ -60,6 +60,7 @@ class GistsViewController: UIViewController {
             .itemSelected
             .do(onNext: { indexPath in
                 if let cell = self.gistsView.tableView.cellForRow(at: indexPath) as? GistTableViewCell {
+                    cell.owner.imgView.tag = 99
                     let imageInSuperview = cell.owner.imgView.convert(cell.owner.imgView.bounds, to: self.view)
                     
                     self.transition = PopAnimator(duration: 0.5,
@@ -108,12 +109,6 @@ extension GistsViewController: UINavigationControllerDelegate {
                               animationControllerFor operation: UINavigationController.Operation,
                               from fromVC: UIViewController,
                               to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return transition
-    }
-}
-
-extension GistsViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return transition
     }
 }

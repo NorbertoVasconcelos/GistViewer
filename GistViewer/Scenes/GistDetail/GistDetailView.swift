@@ -31,7 +31,7 @@ class GistDetailView: UIView {
     }
     
     private func setupView() {
-        btnBack.setImage(UIImage(named: "left_arrow"), for: .normal)
+        btnBack.setImage(UIImage(named: "cross"), for: .normal)
         
         lblTitle.text = "Gist Detail"
         lblTitle.font = UIFont(name: "HelveticaNeue-Bold", size: 36)

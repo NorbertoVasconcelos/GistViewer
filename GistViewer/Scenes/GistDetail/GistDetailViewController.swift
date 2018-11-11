@@ -15,6 +15,7 @@ class GistDetailViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
     
+    var transition: PopAnimator?
     var gistView: GistDetailView = GistDetailView(frame: UIScreen.main.bounds)
     var viewModel: GistDetailViewModel!
     
@@ -23,6 +24,20 @@ class GistDetailViewController: UIViewController {
         view.addSubview(gistView)
         
         bindViewModel()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        let imageInSuperview = self.gistView.owner.imgView.convert(self.gistView.owner.imgView.bounds, to: view)
+//
+//        self.transition = PopAnimator(duration: 0.5,
+//                                      isPresenting: false,
+//                                      originFrame: imageInSuperview,
+//                                      image: self.gistView.owner.imgView.image ?? UIImage(named: "arrow_left")!)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -58,6 +73,9 @@ class GistDetailViewController: UIViewController {
             .disposed(by: disposeBag)
         
         output.back
+            .do(onNext: {
+                
+            })
             .drive()
             .disposed(by: disposeBag)
         
@@ -68,5 +86,15 @@ class GistDetailViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+    }
+}
+
+// MARK: - Transition Animation -
+extension GistDetailViewController: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationController.Operation,
+                              from fromVC: UIViewController,
+                              to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
     }
 }
