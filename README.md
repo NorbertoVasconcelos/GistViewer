@@ -9,7 +9,6 @@ pod install
 `
 
 ## High level overview
-![](Architecture/Modules.png)
 
 #### Domain 
 
@@ -25,7 +24,6 @@ The `Platform` is a concrete implementation of the `Domain` in a specific platfo
 
 
 ## Detail overview
-![](Architecture/ModulesDetails.png)
  
 To enforce modularity, `Domain`, `Platform` and `Application` are separate targets in the App, which allows us to take advantage of the `internal` access layer in Swift to prevent exposing of types that we don't want to expose.
 
@@ -67,7 +65,6 @@ As you can see, concrete implementations are internal, because we don't want to 
 
 In the current example, `Application` is implemented with the [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) pattern and heavy use of [RxSwift](https://github.com/ReactiveX/RxSwift), which makes binding very easy.
 
-![](Architecture/MVVMPattern.png)
 
 Where the `ViewModel` performs pure transformation of a user `Input` to the `Output`
 
