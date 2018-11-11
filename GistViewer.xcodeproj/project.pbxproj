@@ -73,6 +73,7 @@
 		5A5BFF6621972D51001035B5 /* GistDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6521972D51001035B5 /* GistDetailNavigator.swift */; };
 		5A5BFF6921975168001035B5 /* TitleDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6821975168001035B5 /* TitleDescriptionView.swift */; };
 		5A5BFF6B219757EE001035B5 /* ImageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6A219757EE001035B5 /* ImageTitleView.swift */; };
+		5A5BFF6D219860FC001035B5 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6C219860FC001035B5 /* PopAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +253,7 @@
 		5A5BFF6521972D51001035B5 /* GistDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailNavigator.swift; sourceTree = "<group>"; };
 		5A5BFF6821975168001035B5 /* TitleDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescriptionView.swift; sourceTree = "<group>"; };
 		5A5BFF6A219757EE001035B5 /* ImageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleView.swift; sourceTree = "<group>"; };
+		5A5BFF6C219860FC001035B5 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 		6E3B716C0611B2384882FD29 /* Pods-RealmPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPlatform/Pods-RealmPlatform.release.xcconfig"; sourceTree = "<group>"; };
 		74C85F0FF344C6A1A88CDE25 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9660959588C902CFD35CE8C /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Pods/Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 			isa = PBXGroup;
 			children = (
 				5A5BFF0121946B8D001035B5 /* ViewModelType.swift */,
+				5A5BFF6C219860FC001035B5 /* PopAnimator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1161,6 +1164,7 @@
 				5A5BFF0E219483B2001035B5 /* ErrorTracker.swift in Sources */,
 				5A5BFF6621972D51001035B5 /* GistDetailNavigator.swift in Sources */,
 				5A5BFF6221972D2D001035B5 /* GistDetailViewModel.swift in Sources */,
+				5A5BFF6D219860FC001035B5 /* PopAnimator.swift in Sources */,
 				5A5BFEFF21945AA2001035B5 /* GistsView.swift in Sources */,
 				5A5BFF0F219483B2001035B5 /* ActivityIndicator.swift in Sources */,
 				5A5BFF0221946B8D001035B5 /* ViewModelType.swift in Sources */,

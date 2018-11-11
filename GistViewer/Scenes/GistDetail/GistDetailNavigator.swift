@@ -28,6 +28,6 @@ class DefaultGistDetailNavigator: GistDetailNavigator {
     }
     
     func toGists() {
-        navigationController.popViewController(animated: true)
+        navigationController.dismiss(animated: true)
     }
 }

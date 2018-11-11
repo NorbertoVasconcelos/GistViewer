@@ -37,6 +37,8 @@ class GistDetailView: UIView {
         lblTitle.font = UIFont(name: "HelveticaNeue-Bold", size: 36)
         lblTitle.textColor = UIColor.white
         
+        owner.imgView.tag = 99
+        
         stackView = UIStackView(arrangedSubviews: [owner,
                                                    gistDescription,
                                                    createdDate,

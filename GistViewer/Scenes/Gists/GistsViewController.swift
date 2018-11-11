@@ -15,6 +15,7 @@ class GistsViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
 
+    var transition: PopAnimator?
     var gistsView: GistsView = GistsView(frame: UIScreen.main.bounds)
     var viewModel: GistsViewModel!
     
@@ -53,8 +54,24 @@ class GistsViewController: UIViewController {
             .controlEvent(.valueChanged)
             .asDriver()
         
+        let selection = gistsView
+            .tableView
+            .rx
+            .itemSelected
+            .do(onNext: { indexPath in
+                if let cell = self.gistsView.tableView.cellForRow(at: indexPath) as? GistTableViewCell {
+                    let imageInSuperview = cell.owner.imgView.convert(cell.owner.imgView.bounds, to: self.view)
+                    
+                    self.transition = PopAnimator(duration: 0.5,
+                                                  isPresenting: true,
+                                                  originFrame: imageInSuperview,
+                                                  image: cell.owner.imgView.image ?? UIImage(named: "arrow_left")!)
+                }
+            })
+            .asDriverOnErrorJustComplete()
+        
         let input = GistsViewModel.Input(trigger: Driver.merge(viewWillAppear, pull),
-                                         selection: gistsView.tableView.rx.itemSelected.asDriver())
+                                         selection: selection)
         let output = viewModel.transform(input: input)
         
         output.gists
@@ -82,5 +99,21 @@ class GistsViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+    }
+}
+
+// MARK: - Transition Animation -
+extension GistsViewController: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationController.Operation,
+                              from fromVC: UIViewController,
+                              to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+}
+
+extension GistsViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
     }
 }

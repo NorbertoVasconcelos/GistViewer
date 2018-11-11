@@ -49,7 +49,10 @@ class DefaultGistsNavigator: GistsNavigator {
                                                       gist: gist)
         let gistDetailViewController = GistDetailViewController()
         gistDetailViewController.viewModel = gistDetailViewModel
+        if let gistsVC = navigationController.topViewController as? GistsViewController {
+            gistDetailViewController.transitioningDelegate = gistsVC
+        }
         
-        navigationController.pushViewController(gistDetailViewController, animated: true)
+        navigationController.present(gistDetailViewController, animated: true)
     }
 }
