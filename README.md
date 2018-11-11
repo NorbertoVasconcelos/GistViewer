@@ -66,6 +66,6 @@ As you can see, concrete implementations are internal, because we don't want to 
 In the current example, `Application` is implemented with the [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) pattern and heavy use of [RxSwift](https://github.com/ReactiveX/RxSwift), which makes binding very easy.
 
 
-Where the `ViewModel` performs pure transformation of a user `Input` to the `Output`
+The `ViewModel` performs pure transformation of a user `Input` to the `Output`.
 
 A `ViewModel` can be injected into a `ViewController` via property injection or initializer. In the current example, this is done by `Navigator`.
