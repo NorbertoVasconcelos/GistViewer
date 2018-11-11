@@ -1,0 +1,1959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A101B7627F88C0A084A5CFB /* Pods_GistViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2916CE5EE8C93CD5898E09B2 /* Pods_GistViewer.framework */; };
+		15713B4F5FA8EA8139D8133F /* Pods_RealmPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531BB4CD1A6EE04242BF1A7A /* Pods_RealmPlatform.framework */; };
+		1F1252A0785CFBCA4E463BF6 /* Pods_NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F995F04865D11DCC707E1CD1 /* Pods_NetworkPlatform.framework */; };
+		3F2D8FEF0E6503AEF9267700 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C85F0FF344C6A1A88CDE25 /* Pods_Domain.framework */; };
+		5A5BFE2C2193B000001035B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFE2B2193B000001035B5 /* AppDelegate.swift */; };
+		5A5BFE332193B001001035B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5BFE322193B001001035B5 /* Assets.xcassets */; };
+		5A5BFE362193B001001035B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5BFE342193B001001035B5 /* LaunchScreen.storyboard */; };
+		5A5BFE412193B001001035B5 /* GistViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFE402193B001001035B5 /* GistViewerTests.swift */; };
+		5A5BFE4C2193B001001035B5 /* GistViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFE4B2193B001001035B5 /* GistViewerUITests.swift */; };
+		5A5BFE832193C056001035B5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFE7A2193C055001035B5 /* Domain.framework */; };
+		5A5BFE8A2193C056001035B5 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFE892193C056001035B5 /* DomainTests.swift */; };
+		5A5BFE8C2193C056001035B5 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5BFE7C2193C055001035B5 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A5BFE8F2193C056001035B5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFE7A2193C055001035B5 /* Domain.framework */; };
+		5A5BFE902193C056001035B5 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFE7A2193C055001035B5 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A5BFECE2193C0F1001035B5 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFEC52193C0F0001035B5 /* NetworkPlatform.framework */; };
+		5A5BFED52193C0F1001035B5 /* NetworkPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFED42193C0F1001035B5 /* NetworkPlatformTests.swift */; };
+		5A5BFED72193C0F1001035B5 /* NetworkPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5BFEC72193C0F0001035B5 /* NetworkPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A5BFEDA2193C0F1001035B5 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFEC52193C0F0001035B5 /* NetworkPlatform.framework */; };
+		5A5BFEDB2193C0F1001035B5 /* NetworkPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFEC52193C0F0001035B5 /* NetworkPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A5BFEE42193C105001035B5 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEE32193C105001035B5 /* Gist.swift */; };
+		5A5BFEE72193C144001035B5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEE62193C144001035B5 /* Network.swift */; };
+		5A5BFEE92193C18F001035B5 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEE82193C18F001035B5 /* NetworkProvider.swift */; };
+		5A5BFEEC2193C275001035B5 /* GistsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEEB2193C275001035B5 /* GistsNetwork.swift */; };
+		5A5BFEEF2193C6F8001035B5 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEEE2193C6F8001035B5 /* UseCaseProvider.swift */; };
+		5A5BFEF12193C736001035B5 /* GistsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEF02193C736001035B5 /* GistsUseCase.swift */; };
+		5A5BFEF42193C82A001035B5 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEF32193C82A001035B5 /* UseCaseProvider.swift */; };
+		5A5BFEF62193C8A0001035B5 /* GistsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEF52193C8A0001035B5 /* GistsUseCase.swift */; };
+		5A5BFEF72193CA92001035B5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFE7A2193C055001035B5 /* Domain.framework */; };
+		5A5BFEFB21945A85001035B5 /* GistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEFA21945A85001035B5 /* GistsViewController.swift */; };
+		5A5BFEFD21945A93001035B5 /* GistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEFC21945A93001035B5 /* GistsViewModel.swift */; };
+		5A5BFEFF21945AA2001035B5 /* GistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFEFE21945AA2001035B5 /* GistsView.swift */; };
+		5A5BFF0221946B8D001035B5 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF0121946B8D001035B5 /* ViewModelType.swift */; };
+		5A5BFF0421946C65001035B5 /* GistsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF0321946C65001035B5 /* GistsNavigator.swift */; };
+		5A5BFF0721946D9E001035B5 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF0621946D9E001035B5 /* Application.swift */; };
+		5A5BFF0A219481E7001035B5 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF09219481E7001035B5 /* Observable+Ext.swift */; };
+		5A5BFF0E219483B2001035B5 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF0B219483B2001035B5 /* ErrorTracker.swift */; };
+		5A5BFF0F219483B2001035B5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF0C219483B2001035B5 /* ActivityIndicator.swift */; };
+		5A5BFF10219483B2001035B5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF0D219483B2001035B5 /* Reusable.swift */; };
+		5A5BFF1321948827001035B5 /* GistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF1221948827001035B5 /* GistTableViewCell.swift */; };
+		5A5BFF172194911A001035B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF162194911A001035B5 /* User.swift */; };
+		5A5BFF19219497B8001035B5 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF18219497B8001035B5 /* DateFormatter+Ext.swift */; };
+		5A5BFF1A21949867001035B5 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF18219497B8001035B5 /* DateFormatter+Ext.swift */; };
+		5A5BFF292195A1FD001035B5 /* RealmPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */; };
+		5A5BFF302195A1FD001035B5 /* RealmPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF2F2195A1FD001035B5 /* RealmPlatformTests.swift */; };
+		5A5BFF322195A1FD001035B5 /* RealmPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5BFF222195A1FD001035B5 /* RealmPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A5BFF352195A1FD001035B5 /* RealmPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */; };
+		5A5BFF362195A1FD001035B5 /* RealmPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A5BFF422195A5BC001035B5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF412195A5BC001035B5 /* Repository.swift */; };
+		5A5BFF442195A62D001035B5 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF432195A62D001035B5 /* UseCaseProvider.swift */; };
+		5A5BFF462195A64D001035B5 /* GistsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF452195A64D001035B5 /* GistsUseCase.swift */; };
+		5A5BFF4C2195A996001035B5 /* RunLoopThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF482195A996001035B5 /* RunLoopThreadScheduler.swift */; };
+		5A5BFF4D2195A996001035B5 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF4A2195A996001035B5 /* Observable+Ext.swift */; };
+		5A5BFF4E2195A996001035B5 /* Realm+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF4B2195A996001035B5 /* Realm+Ext.swift */; };
+		5A5BFF522195A9F4001035B5 /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF502195A9F4001035B5 /* RealmRepresentable.swift */; };
+		5A5BFF532195A9F4001035B5 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF512195A9F4001035B5 /* DomainConvertibleType.swift */; };
+		5A5BFF552195AAAB001035B5 /* RMGist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF542195AAAB001035B5 /* RMGist.swift */; };
+		5A5BFF562195AD8B001035B5 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF18219497B8001035B5 /* DateFormatter+Ext.swift */; };
+		5A5BFF582195C9B6001035B5 /* RMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF572195C9B6001035B5 /* RMUser.swift */; };
+		5A5BFF592195D33A001035B5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFE7A2193C055001035B5 /* Domain.framework */; };
+		5A5BFF5B2195EC66001035B5 /* RealmPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */; };
+		5A5BFF6021972D17001035B5 /* GistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF5F21972D17001035B5 /* GistDetailViewController.swift */; };
+		5A5BFF6221972D2D001035B5 /* GistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6121972D2D001035B5 /* GistDetailViewModel.swift */; };
+		5A5BFF6421972D3C001035B5 /* GistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6321972D3C001035B5 /* GistDetailView.swift */; };
+		5A5BFF6621972D51001035B5 /* GistDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6521972D51001035B5 /* GistDetailNavigator.swift */; };
+		5A5BFF6921975168001035B5 /* TitleDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6821975168001035B5 /* TitleDescriptionView.swift */; };
+		5A5BFF6B219757EE001035B5 /* ImageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5BFF6A219757EE001035B5 /* ImageTitleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A5BFE3D2193B001001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE272193AFFF001035B5;
+			remoteInfo = GistViewer;
+		};
+		5A5BFE482193B001001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE272193AFFF001035B5;
+			remoteInfo = GistViewer;
+		};
+		5A5BFE842193C056001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE792193C055001035B5;
+			remoteInfo = Domain;
+		};
+		5A5BFE862193C056001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE272193AFFF001035B5;
+			remoteInfo = GistViewer;
+		};
+		5A5BFE8D2193C056001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE792193C055001035B5;
+			remoteInfo = Domain;
+		};
+		5A5BFECF2193C0F1001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFEC42193C0F0001035B5;
+			remoteInfo = NetworkPlatform;
+		};
+		5A5BFED12193C0F1001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE272193AFFF001035B5;
+			remoteInfo = GistViewer;
+		};
+		5A5BFED82193C0F1001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFEC42193C0F0001035B5;
+			remoteInfo = NetworkPlatform;
+		};
+		5A5BFF2A2195A1FD001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFF1F2195A1FD001035B5;
+			remoteInfo = RealmPlatform;
+		};
+		5A5BFF2C2195A1FD001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFE272193AFFF001035B5;
+			remoteInfo = GistViewer;
+		};
+		5A5BFF332195A1FD001035B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5BFE202193AFFF001035B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5BFF1F2195A1FD001035B5;
+			remoteInfo = RealmPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A5BFE6A2193B8C8001035B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE942193C056001035B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A5BFF362195A1FD001035B5 /* RealmPlatform.framework in Embed Frameworks */,
+				5A5BFEDB2193C0F1001035B5 /* NetworkPlatform.framework in Embed Frameworks */,
+				5A5BFE902193C056001035B5 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2916CE5EE8C93CD5898E09B2 /* Pods_GistViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4463B3AE005DDF6AF5AAA00B /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		4F28F7B8A4C54E7E5D59F5F3 /* Pods-GistViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GistViewer/Pods-GistViewer.release.xcconfig"; sourceTree = "<group>"; };
+		531BB4CD1A6EE04242BF1A7A /* Pods_RealmPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFE282193B000001035B5 /* GistViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFE2B2193B000001035B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A5BFE322193B001001035B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A5BFE352193B001001035B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A5BFE372193B001001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFE3C2193B001001035B5 /* GistViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFE402193B001001035B5 /* GistViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistViewerTests.swift; sourceTree = "<group>"; };
+		5A5BFE422193B001001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFE472193B001001035B5 /* GistViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFE4B2193B001001035B5 /* GistViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistViewerUITests.swift; sourceTree = "<group>"; };
+		5A5BFE4D2193B001001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFE7A2193C055001035B5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFE7C2193C055001035B5 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		5A5BFE7D2193C055001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFE822193C056001035B5 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFE892193C056001035B5 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		5A5BFE8B2193C056001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFEC52193C0F0001035B5 /* NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFEC72193C0F0001035B5 /* NetworkPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkPlatform.h; sourceTree = "<group>"; };
+		5A5BFEC82193C0F0001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFECD2193C0F0001035B5 /* NetworkPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFED42193C0F1001035B5 /* NetworkPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPlatformTests.swift; sourceTree = "<group>"; };
+		5A5BFED62193C0F1001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFEE32193C105001035B5 /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
+		5A5BFEE62193C144001035B5 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5A5BFEE82193C18F001035B5 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		5A5BFEEB2193C275001035B5 /* GistsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsNetwork.swift; sourceTree = "<group>"; };
+		5A5BFEEE2193C6F8001035B5 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		5A5BFEF02193C736001035B5 /* GistsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsUseCase.swift; sourceTree = "<group>"; };
+		5A5BFEF32193C82A001035B5 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		5A5BFEF52193C8A0001035B5 /* GistsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsUseCase.swift; sourceTree = "<group>"; };
+		5A5BFEFA21945A85001035B5 /* GistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsViewController.swift; sourceTree = "<group>"; };
+		5A5BFEFC21945A93001035B5 /* GistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsViewModel.swift; sourceTree = "<group>"; };
+		5A5BFEFE21945AA2001035B5 /* GistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsView.swift; sourceTree = "<group>"; };
+		5A5BFF0121946B8D001035B5 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		5A5BFF0321946C65001035B5 /* GistsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsNavigator.swift; sourceTree = "<group>"; };
+		5A5BFF0621946D9E001035B5 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		5A5BFF09219481E7001035B5 /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		5A5BFF0B219483B2001035B5 /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		5A5BFF0C219483B2001035B5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		5A5BFF0D219483B2001035B5 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		5A5BFF1221948827001035B5 /* GistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistTableViewCell.swift; sourceTree = "<group>"; };
+		5A5BFF162194911A001035B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A5BFF18219497B8001035B5 /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
+		5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFF222195A1FD001035B5 /* RealmPlatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmPlatform.h; sourceTree = "<group>"; };
+		5A5BFF232195A1FD001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFF282195A1FD001035B5 /* RealmPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5BFF2F2195A1FD001035B5 /* RealmPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPlatformTests.swift; sourceTree = "<group>"; };
+		5A5BFF312195A1FD001035B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5BFF412195A5BC001035B5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		5A5BFF432195A62D001035B5 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		5A5BFF452195A64D001035B5 /* GistsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsUseCase.swift; sourceTree = "<group>"; };
+		5A5BFF482195A996001035B5 /* RunLoopThreadScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoopThreadScheduler.swift; sourceTree = "<group>"; };
+		5A5BFF4A2195A996001035B5 /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		5A5BFF4B2195A996001035B5 /* Realm+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Ext.swift"; sourceTree = "<group>"; };
+		5A5BFF502195A9F4001035B5 /* RealmRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
+		5A5BFF512195A9F4001035B5 /* DomainConvertibleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
+		5A5BFF542195AAAB001035B5 /* RMGist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGist.swift; sourceTree = "<group>"; };
+		5A5BFF572195C9B6001035B5 /* RMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMUser.swift; sourceTree = "<group>"; };
+		5A5BFF5F21972D17001035B5 /* GistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailViewController.swift; sourceTree = "<group>"; };
+		5A5BFF6121972D2D001035B5 /* GistDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailViewModel.swift; sourceTree = "<group>"; };
+		5A5BFF6321972D3C001035B5 /* GistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailView.swift; sourceTree = "<group>"; };
+		5A5BFF6521972D51001035B5 /* GistDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailNavigator.swift; sourceTree = "<group>"; };
+		5A5BFF6821975168001035B5 /* TitleDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDescriptionView.swift; sourceTree = "<group>"; };
+		5A5BFF6A219757EE001035B5 /* ImageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleView.swift; sourceTree = "<group>"; };
+		6E3B716C0611B2384882FD29 /* Pods-RealmPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPlatform/Pods-RealmPlatform.release.xcconfig"; sourceTree = "<group>"; };
+		74C85F0FF344C6A1A88CDE25 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9660959588C902CFD35CE8C /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Pods/Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		AF7477D65DCC343BF4DA8D3A /* Pods-NetworkPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkPlatform/Pods-NetworkPlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		C678767B9B76C678470D1545 /* Pods-GistViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GistViewer/Pods-GistViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		E1788417E506C527BADB6AB7 /* Pods-NetworkPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkPlatform/Pods-NetworkPlatform.release.xcconfig"; sourceTree = "<group>"; };
+		E1864AC183FBCDD8CC3B3A79 /* Pods-RealmPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPlatform/Pods-RealmPlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		F995F04865D11DCC707E1CD1 /* Pods_NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A5BFE252193AFFF001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE8F2193C056001035B5 /* Domain.framework in Frameworks */,
+				5A5BFF352195A1FD001035B5 /* RealmPlatform.framework in Frameworks */,
+				5A5BFEDA2193C0F1001035B5 /* NetworkPlatform.framework in Frameworks */,
+				0A101B7627F88C0A084A5CFB /* Pods_GistViewer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE392193B001001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE442193B001001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE772193C055001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2D8FEF0E6503AEF9267700 /* Pods_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE7F2193C056001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE832193C056001035B5 /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFEC22193C0F0001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF5B2195EC66001035B5 /* RealmPlatform.framework in Frameworks */,
+				5A5BFEF72193CA92001035B5 /* Domain.framework in Frameworks */,
+				1F1252A0785CFBCA4E463BF6 /* Pods_NetworkPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFECA2193C0F0001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFECE2193C0F1001035B5 /* NetworkPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF1D2195A1FD001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF592195D33A001035B5 /* Domain.framework in Frameworks */,
+				15713B4F5FA8EA8139D8133F /* Pods_RealmPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF252195A1FD001035B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF292195A1FD001035B5 /* RealmPlatform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A5BFE1F2193AFFF001035B5 = {
+			isa = PBXGroup;
+			children = (
+				5A5BFE2A2193B000001035B5 /* GistViewer */,
+				5A5BFE3F2193B001001035B5 /* GistViewerTests */,
+				5A5BFE4A2193B001001035B5 /* GistViewerUITests */,
+				5A5BFE7B2193C055001035B5 /* Domain */,
+				5A5BFE882193C056001035B5 /* DomainTests */,
+				5A5BFEC62193C0F0001035B5 /* NetworkPlatform */,
+				5A5BFED32193C0F1001035B5 /* NetworkPlatformTests */,
+				5A5BFF212195A1FD001035B5 /* RealmPlatform */,
+				5A5BFF2E2195A1FD001035B5 /* RealmPlatformTests */,
+				5A5BFE292193B000001035B5 /* Products */,
+				9B3DCD6ABFDFC35641BCA947 /* Pods */,
+				63285AED89569888ABC5A57F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A5BFE292193B000001035B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFE282193B000001035B5 /* GistViewer.app */,
+				5A5BFE3C2193B001001035B5 /* GistViewerTests.xctest */,
+				5A5BFE472193B001001035B5 /* GistViewerUITests.xctest */,
+				5A5BFE7A2193C055001035B5 /* Domain.framework */,
+				5A5BFE822193C056001035B5 /* DomainTests.xctest */,
+				5A5BFEC52193C0F0001035B5 /* NetworkPlatform.framework */,
+				5A5BFECD2193C0F0001035B5 /* NetworkPlatformTests.xctest */,
+				5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */,
+				5A5BFF282195A1FD001035B5 /* RealmPlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A5BFE2A2193B000001035B5 /* GistViewer */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF6721975142001035B5 /* Common Views */,
+				5A5BFF08219481D5001035B5 /* Utils */,
+				5A5BFF0521946D91001035B5 /* Application */,
+				5A5BFF0021946B7E001035B5 /* Common */,
+				5A5BFEF821945A4E001035B5 /* Scenes */,
+				5A5BFE2B2193B000001035B5 /* AppDelegate.swift */,
+				5A5BFE322193B001001035B5 /* Assets.xcassets */,
+				5A5BFE342193B001001035B5 /* LaunchScreen.storyboard */,
+				5A5BFE372193B001001035B5 /* Info.plist */,
+			);
+			path = GistViewer;
+			sourceTree = "<group>";
+		};
+		5A5BFE3F2193B001001035B5 /* GistViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFE402193B001001035B5 /* GistViewerTests.swift */,
+				5A5BFE422193B001001035B5 /* Info.plist */,
+			);
+			path = GistViewerTests;
+			sourceTree = "<group>";
+		};
+		5A5BFE4A2193B001001035B5 /* GistViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFE4B2193B001001035B5 /* GistViewerUITests.swift */,
+				5A5BFE4D2193B001001035B5 /* Info.plist */,
+			);
+			path = GistViewerUITests;
+			sourceTree = "<group>";
+		};
+		5A5BFE7B2193C055001035B5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEED2193C6DA001035B5 /* UseCases */,
+				5A5BFEE22193C0F9001035B5 /* Entities */,
+				5A5BFE7C2193C055001035B5 /* Domain.h */,
+				5A5BFE7D2193C055001035B5 /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5A5BFE882193C056001035B5 /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFE892193C056001035B5 /* DomainTests.swift */,
+				5A5BFE8B2193C056001035B5 /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		5A5BFEC62193C0F0001035B5 /* NetworkPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEF22193C81A001035B5 /* UseCases */,
+				5A5BFEEA2193C24F001035B5 /* API */,
+				5A5BFEE52193C134001035B5 /* Network */,
+				5A5BFEC72193C0F0001035B5 /* NetworkPlatform.h */,
+				5A5BFEC82193C0F0001035B5 /* Info.plist */,
+			);
+			path = NetworkPlatform;
+			sourceTree = "<group>";
+		};
+		5A5BFED32193C0F1001035B5 /* NetworkPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFED42193C0F1001035B5 /* NetworkPlatformTests.swift */,
+				5A5BFED62193C0F1001035B5 /* Info.plist */,
+			);
+			path = NetworkPlatformTests;
+			sourceTree = "<group>";
+		};
+		5A5BFEE22193C0F9001035B5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEE32193C105001035B5 /* Gist.swift */,
+				5A5BFF162194911A001035B5 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5A5BFEE52193C134001035B5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEE62193C144001035B5 /* Network.swift */,
+				5A5BFEE82193C18F001035B5 /* NetworkProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5A5BFEEA2193C24F001035B5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEEB2193C275001035B5 /* GistsNetwork.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5A5BFEED2193C6DA001035B5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEEE2193C6F8001035B5 /* UseCaseProvider.swift */,
+				5A5BFEF02193C736001035B5 /* GistsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5A5BFEF22193C81A001035B5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFEF32193C82A001035B5 /* UseCaseProvider.swift */,
+				5A5BFEF52193C8A0001035B5 /* GistsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5A5BFEF821945A4E001035B5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF5E21972CEA001035B5 /* GistDetail */,
+				5A5BFEF921945A56001035B5 /* Gists */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5A5BFEF921945A56001035B5 /* Gists */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF1121948808001035B5 /* Cells */,
+				5A5BFEFA21945A85001035B5 /* GistsViewController.swift */,
+				5A5BFEFC21945A93001035B5 /* GistsViewModel.swift */,
+				5A5BFEFE21945AA2001035B5 /* GistsView.swift */,
+				5A5BFF0321946C65001035B5 /* GistsNavigator.swift */,
+			);
+			path = Gists;
+			sourceTree = "<group>";
+		};
+		5A5BFF0021946B7E001035B5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF0121946B8D001035B5 /* ViewModelType.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5A5BFF0521946D91001035B5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF0621946D9E001035B5 /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5A5BFF08219481D5001035B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF0C219483B2001035B5 /* ActivityIndicator.swift */,
+				5A5BFF0B219483B2001035B5 /* ErrorTracker.swift */,
+				5A5BFF0D219483B2001035B5 /* Reusable.swift */,
+				5A5BFF09219481E7001035B5 /* Observable+Ext.swift */,
+				5A5BFF18219497B8001035B5 /* DateFormatter+Ext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A5BFF1121948808001035B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF1221948827001035B5 /* GistTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5A5BFF212195A1FD001035B5 /* RealmPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF402195A26E001035B5 /* Utility */,
+				5A5BFF3F2195A25C001035B5 /* UseCases */,
+				5A5BFF3E2195A250001035B5 /* Entities */,
+				5A5BFF3D2195A247001035B5 /* Repository */,
+				5A5BFF222195A1FD001035B5 /* RealmPlatform.h */,
+				5A5BFF232195A1FD001035B5 /* Info.plist */,
+			);
+			path = RealmPlatform;
+			sourceTree = "<group>";
+		};
+		5A5BFF2E2195A1FD001035B5 /* RealmPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF2F2195A1FD001035B5 /* RealmPlatformTests.swift */,
+				5A5BFF312195A1FD001035B5 /* Info.plist */,
+			);
+			path = RealmPlatformTests;
+			sourceTree = "<group>";
+		};
+		5A5BFF3D2195A247001035B5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF412195A5BC001035B5 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5A5BFF3E2195A250001035B5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF4F2195A9F4001035B5 /* Conversion */,
+				5A5BFF542195AAAB001035B5 /* RMGist.swift */,
+				5A5BFF572195C9B6001035B5 /* RMUser.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5A5BFF3F2195A25C001035B5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF432195A62D001035B5 /* UseCaseProvider.swift */,
+				5A5BFF452195A64D001035B5 /* GistsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5A5BFF402195A26E001035B5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF492195A996001035B5 /* Extensions */,
+				5A5BFF472195A996001035B5 /* RxUnits */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5A5BFF472195A996001035B5 /* RxUnits */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF482195A996001035B5 /* RunLoopThreadScheduler.swift */,
+			);
+			path = RxUnits;
+			sourceTree = "<group>";
+		};
+		5A5BFF492195A996001035B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF4A2195A996001035B5 /* Observable+Ext.swift */,
+				5A5BFF4B2195A996001035B5 /* Realm+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A5BFF4F2195A9F4001035B5 /* Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF502195A9F4001035B5 /* RealmRepresentable.swift */,
+				5A5BFF512195A9F4001035B5 /* DomainConvertibleType.swift */,
+			);
+			path = Conversion;
+			sourceTree = "<group>";
+		};
+		5A5BFF5E21972CEA001035B5 /* GistDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF5F21972D17001035B5 /* GistDetailViewController.swift */,
+				5A5BFF6121972D2D001035B5 /* GistDetailViewModel.swift */,
+				5A5BFF6321972D3C001035B5 /* GistDetailView.swift */,
+				5A5BFF6521972D51001035B5 /* GistDetailNavigator.swift */,
+			);
+			path = GistDetail;
+			sourceTree = "<group>";
+		};
+		5A5BFF6721975142001035B5 /* Common Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A5BFF6821975168001035B5 /* TitleDescriptionView.swift */,
+				5A5BFF6A219757EE001035B5 /* ImageTitleView.swift */,
+			);
+			path = "Common Views";
+			sourceTree = "<group>";
+		};
+		63285AED89569888ABC5A57F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2916CE5EE8C93CD5898E09B2 /* Pods_GistViewer.framework */,
+				F995F04865D11DCC707E1CD1 /* Pods_NetworkPlatform.framework */,
+				74C85F0FF344C6A1A88CDE25 /* Pods_Domain.framework */,
+				531BB4CD1A6EE04242BF1A7A /* Pods_RealmPlatform.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B3DCD6ABFDFC35641BCA947 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C678767B9B76C678470D1545 /* Pods-GistViewer.debug.xcconfig */,
+				4F28F7B8A4C54E7E5D59F5F3 /* Pods-GistViewer.release.xcconfig */,
+				AF7477D65DCC343BF4DA8D3A /* Pods-NetworkPlatform.debug.xcconfig */,
+				E1788417E506C527BADB6AB7 /* Pods-NetworkPlatform.release.xcconfig */,
+				4463B3AE005DDF6AF5AAA00B /* Pods-Domain.debug.xcconfig */,
+				A9660959588C902CFD35CE8C /* Pods-Domain.release.xcconfig */,
+				E1864AC183FBCDD8CC3B3A79 /* Pods-RealmPlatform.debug.xcconfig */,
+				6E3B716C0611B2384882FD29 /* Pods-RealmPlatform.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A5BFE752193C055001035B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE8C2193C056001035B5 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFEC02193C0F0001035B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFED72193C0F1001035B5 /* NetworkPlatform.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF1B2195A1FD001035B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF322195A1FD001035B5 /* RealmPlatform.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A5BFE272193AFFF001035B5 /* GistViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFE502193B001001035B5 /* Build configuration list for PBXNativeTarget "GistViewer" */;
+			buildPhases = (
+				CFB0BDBCCBCECC9E7A9BED03 /* [CP] Check Pods Manifest.lock */,
+				5A5BFE242193AFFF001035B5 /* Sources */,
+				5A5BFE252193AFFF001035B5 /* Frameworks */,
+				5A5BFE262193AFFF001035B5 /* Resources */,
+				5A5BFE6A2193B8C8001035B5 /* Embed App Extensions */,
+				88511701520E7C08725F29BA /* [CP] Embed Pods Frameworks */,
+				5A5BFE942193C056001035B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BFE8E2193C056001035B5 /* PBXTargetDependency */,
+				5A5BFED92193C0F1001035B5 /* PBXTargetDependency */,
+				5A5BFF342195A1FD001035B5 /* PBXTargetDependency */,
+			);
+			name = GistViewer;
+			productName = GistViewer;
+			productReference = 5A5BFE282193B000001035B5 /* GistViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A5BFE3B2193B001001035B5 /* GistViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFE532193B001001035B5 /* Build configuration list for PBXNativeTarget "GistViewerTests" */;
+			buildPhases = (
+				5A5BFE382193B001001035B5 /* Sources */,
+				5A5BFE392193B001001035B5 /* Frameworks */,
+				5A5BFE3A2193B001001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BFE3E2193B001001035B5 /* PBXTargetDependency */,
+			);
+			name = GistViewerTests;
+			productName = GistViewerTests;
+			productReference = 5A5BFE3C2193B001001035B5 /* GistViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A5BFE462193B001001035B5 /* GistViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFE562193B001001035B5 /* Build configuration list for PBXNativeTarget "GistViewerUITests" */;
+			buildPhases = (
+				5A5BFE432193B001001035B5 /* Sources */,
+				5A5BFE442193B001001035B5 /* Frameworks */,
+				5A5BFE452193B001001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BFE492193B001001035B5 /* PBXTargetDependency */,
+			);
+			name = GistViewerUITests;
+			productName = GistViewerUITests;
+			productReference = 5A5BFE472193B001001035B5 /* GistViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5A5BFE792193C055001035B5 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFE912193C056001035B5 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				EB95A7AD751C985B9A73ED2D /* [CP] Check Pods Manifest.lock */,
+				5A5BFE752193C055001035B5 /* Headers */,
+				5A5BFE762193C055001035B5 /* Sources */,
+				5A5BFE772193C055001035B5 /* Frameworks */,
+				5A5BFE782193C055001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 5A5BFE7A2193C055001035B5 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A5BFE812193C056001035B5 /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFE952193C056001035B5 /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				5A5BFE7E2193C056001035B5 /* Sources */,
+				5A5BFE7F2193C056001035B5 /* Frameworks */,
+				5A5BFE802193C056001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BFE852193C056001035B5 /* PBXTargetDependency */,
+				5A5BFE872193C056001035B5 /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = 5A5BFE822193C056001035B5 /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A5BFEC42193C0F0001035B5 /* NetworkPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFEDC2193C0F1001035B5 /* Build configuration list for PBXNativeTarget "NetworkPlatform" */;
+			buildPhases = (
+				5CCCAA1862ECFA29D194C443 /* [CP] Check Pods Manifest.lock */,
+				5A5BFEC02193C0F0001035B5 /* Headers */,
+				5A5BFEC12193C0F0001035B5 /* Sources */,
+				5A5BFEC22193C0F0001035B5 /* Frameworks */,
+				5A5BFEC32193C0F0001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkPlatform;
+			productName = NetworkPlatform;
+			productReference = 5A5BFEC52193C0F0001035B5 /* NetworkPlatform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A5BFECC2193C0F0001035B5 /* NetworkPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFEDF2193C0F1001035B5 /* Build configuration list for PBXNativeTarget "NetworkPlatformTests" */;
+			buildPhases = (
+				5A5BFEC92193C0F0001035B5 /* Sources */,
+				5A5BFECA2193C0F0001035B5 /* Frameworks */,
+				5A5BFECB2193C0F0001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BFED02193C0F1001035B5 /* PBXTargetDependency */,
+				5A5BFED22193C0F1001035B5 /* PBXTargetDependency */,
+			);
+			name = NetworkPlatformTests;
+			productName = NetworkPlatformTests;
+			productReference = 5A5BFECD2193C0F0001035B5 /* NetworkPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A5BFF1F2195A1FD001035B5 /* RealmPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFF3B2195A1FD001035B5 /* Build configuration list for PBXNativeTarget "RealmPlatform" */;
+			buildPhases = (
+				DA9BC23BC9A4C03D5A34BB45 /* [CP] Check Pods Manifest.lock */,
+				5A5BFF1B2195A1FD001035B5 /* Headers */,
+				5A5BFF1C2195A1FD001035B5 /* Sources */,
+				5A5BFF1D2195A1FD001035B5 /* Frameworks */,
+				5A5BFF1E2195A1FD001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmPlatform;
+			productName = RealmPlatform;
+			productReference = 5A5BFF202195A1FD001035B5 /* RealmPlatform.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A5BFF272195A1FD001035B5 /* RealmPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5BFF3C2195A1FD001035B5 /* Build configuration list for PBXNativeTarget "RealmPlatformTests" */;
+			buildPhases = (
+				5A5BFF242195A1FD001035B5 /* Sources */,
+				5A5BFF252195A1FD001035B5 /* Frameworks */,
+				5A5BFF262195A1FD001035B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5BFF2B2195A1FD001035B5 /* PBXTargetDependency */,
+				5A5BFF2D2195A1FD001035B5 /* PBXTargetDependency */,
+			);
+			name = RealmPlatformTests;
+			productName = RealmPlatformTests;
+			productReference = 5A5BFF282195A1FD001035B5 /* RealmPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A5BFE202193AFFF001035B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Vasconcelos;
+				TargetAttributes = {
+					5A5BFE272193AFFF001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5A5BFE3B2193B001001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A5BFE272193AFFF001035B5;
+					};
+					5A5BFE462193B001001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A5BFE272193AFFF001035B5;
+					};
+					5A5BFE792193C055001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					5A5BFE812193C056001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A5BFE272193AFFF001035B5;
+					};
+					5A5BFEC42193C0F0001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					5A5BFECC2193C0F0001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A5BFE272193AFFF001035B5;
+					};
+					5A5BFF1F2195A1FD001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					5A5BFF272195A1FD001035B5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A5BFE272193AFFF001035B5;
+					};
+				};
+			};
+			buildConfigurationList = 5A5BFE232193AFFF001035B5 /* Build configuration list for PBXProject "GistViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A5BFE1F2193AFFF001035B5;
+			productRefGroup = 5A5BFE292193B000001035B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A5BFE272193AFFF001035B5 /* GistViewer */,
+				5A5BFE3B2193B001001035B5 /* GistViewerTests */,
+				5A5BFE462193B001001035B5 /* GistViewerUITests */,
+				5A5BFE792193C055001035B5 /* Domain */,
+				5A5BFE812193C056001035B5 /* DomainTests */,
+				5A5BFEC42193C0F0001035B5 /* NetworkPlatform */,
+				5A5BFECC2193C0F0001035B5 /* NetworkPlatformTests */,
+				5A5BFF1F2195A1FD001035B5 /* RealmPlatform */,
+				5A5BFF272195A1FD001035B5 /* RealmPlatformTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A5BFE262193AFFF001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE362193B001001035B5 /* LaunchScreen.storyboard in Resources */,
+				5A5BFE332193B001001035B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE3A2193B001001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE452193B001001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE782193C055001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE802193C056001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFEC32193C0F0001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFECB2193C0F0001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF1E2195A1FD001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF262195A1FD001035B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CCCAA1862ECFA29D194C443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkPlatform-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88511701520E7C08725F29BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GistViewer/Pods-GistViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GistViewer/Pods-GistViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB0BDBCCBCECC9E7A9BED03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GistViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9BC23BC9A4C03D5A34BB45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmPlatform-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB95A7AD751C985B9A73ED2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A5BFE242193AFFF001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF6021972D17001035B5 /* GistDetailViewController.swift in Sources */,
+				5A5BFF0A219481E7001035B5 /* Observable+Ext.swift in Sources */,
+				5A5BFF10219483B2001035B5 /* Reusable.swift in Sources */,
+				5A5BFF6B219757EE001035B5 /* ImageTitleView.swift in Sources */,
+				5A5BFF19219497B8001035B5 /* DateFormatter+Ext.swift in Sources */,
+				5A5BFF6421972D3C001035B5 /* GistDetailView.swift in Sources */,
+				5A5BFF0721946D9E001035B5 /* Application.swift in Sources */,
+				5A5BFF6921975168001035B5 /* TitleDescriptionView.swift in Sources */,
+				5A5BFF0421946C65001035B5 /* GistsNavigator.swift in Sources */,
+				5A5BFF1321948827001035B5 /* GistTableViewCell.swift in Sources */,
+				5A5BFEFB21945A85001035B5 /* GistsViewController.swift in Sources */,
+				5A5BFF0E219483B2001035B5 /* ErrorTracker.swift in Sources */,
+				5A5BFF6621972D51001035B5 /* GistDetailNavigator.swift in Sources */,
+				5A5BFF6221972D2D001035B5 /* GistDetailViewModel.swift in Sources */,
+				5A5BFEFF21945AA2001035B5 /* GistsView.swift in Sources */,
+				5A5BFF0F219483B2001035B5 /* ActivityIndicator.swift in Sources */,
+				5A5BFF0221946B8D001035B5 /* ViewModelType.swift in Sources */,
+				5A5BFEFD21945A93001035B5 /* GistsViewModel.swift in Sources */,
+				5A5BFE2C2193B000001035B5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE382193B001001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE412193B001001035B5 /* GistViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE432193B001001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE4C2193B001001035B5 /* GistViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE762193C055001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF172194911A001035B5 /* User.swift in Sources */,
+				5A5BFF1A21949867001035B5 /* DateFormatter+Ext.swift in Sources */,
+				5A5BFEEF2193C6F8001035B5 /* UseCaseProvider.swift in Sources */,
+				5A5BFEF12193C736001035B5 /* GistsUseCase.swift in Sources */,
+				5A5BFEE42193C105001035B5 /* Gist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFE7E2193C056001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFE8A2193C056001035B5 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFEC12193C0F0001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFEF42193C82A001035B5 /* UseCaseProvider.swift in Sources */,
+				5A5BFEF62193C8A0001035B5 /* GistsUseCase.swift in Sources */,
+				5A5BFEE72193C144001035B5 /* Network.swift in Sources */,
+				5A5BFEE92193C18F001035B5 /* NetworkProvider.swift in Sources */,
+				5A5BFEEC2193C275001035B5 /* GistsNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFEC92193C0F0001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFED52193C0F1001035B5 /* NetworkPlatformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF1C2195A1FD001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF442195A62D001035B5 /* UseCaseProvider.swift in Sources */,
+				5A5BFF4E2195A996001035B5 /* Realm+Ext.swift in Sources */,
+				5A5BFF522195A9F4001035B5 /* RealmRepresentable.swift in Sources */,
+				5A5BFF552195AAAB001035B5 /* RMGist.swift in Sources */,
+				5A5BFF4C2195A996001035B5 /* RunLoopThreadScheduler.swift in Sources */,
+				5A5BFF582195C9B6001035B5 /* RMUser.swift in Sources */,
+				5A5BFF462195A64D001035B5 /* GistsUseCase.swift in Sources */,
+				5A5BFF562195AD8B001035B5 /* DateFormatter+Ext.swift in Sources */,
+				5A5BFF532195A9F4001035B5 /* DomainConvertibleType.swift in Sources */,
+				5A5BFF422195A5BC001035B5 /* Repository.swift in Sources */,
+				5A5BFF4D2195A996001035B5 /* Observable+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5BFF242195A1FD001035B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5BFF302195A1FD001035B5 /* RealmPlatformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A5BFE3E2193B001001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE272193AFFF001035B5 /* GistViewer */;
+			targetProxy = 5A5BFE3D2193B001001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFE492193B001001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE272193AFFF001035B5 /* GistViewer */;
+			targetProxy = 5A5BFE482193B001001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFE852193C056001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE792193C055001035B5 /* Domain */;
+			targetProxy = 5A5BFE842193C056001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFE872193C056001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE272193AFFF001035B5 /* GistViewer */;
+			targetProxy = 5A5BFE862193C056001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFE8E2193C056001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE792193C055001035B5 /* Domain */;
+			targetProxy = 5A5BFE8D2193C056001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFED02193C0F1001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFEC42193C0F0001035B5 /* NetworkPlatform */;
+			targetProxy = 5A5BFECF2193C0F1001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFED22193C0F1001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE272193AFFF001035B5 /* GistViewer */;
+			targetProxy = 5A5BFED12193C0F1001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFED92193C0F1001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFEC42193C0F0001035B5 /* NetworkPlatform */;
+			targetProxy = 5A5BFED82193C0F1001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFF2B2195A1FD001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFF1F2195A1FD001035B5 /* RealmPlatform */;
+			targetProxy = 5A5BFF2A2195A1FD001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFF2D2195A1FD001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFE272193AFFF001035B5 /* GistViewer */;
+			targetProxy = 5A5BFF2C2195A1FD001035B5 /* PBXContainerItemProxy */;
+		};
+		5A5BFF342195A1FD001035B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5BFF1F2195A1FD001035B5 /* RealmPlatform */;
+			targetProxy = 5A5BFF332195A1FD001035B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A5BFE342193B001001035B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A5BFE352193B001001035B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A5BFE4E2193B001001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A5BFE4F2193B001001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A5BFE512193B001001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C678767B9B76C678470D1545 /* Pods-GistViewer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GistViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.GistViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A5BFE522193B001001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F28F7B8A4C54E7E5D59F5F3 /* Pods-GistViewer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GistViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.GistViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A5BFE542193B001001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GistViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.GistViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Debug;
+		};
+		5A5BFE552193B001001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GistViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.GistViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Release;
+		};
+		5A5BFE572193B001001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GistViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.GistViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GistViewer;
+			};
+			name = Debug;
+		};
+		5A5BFE582193B001001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GistViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.GistViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GistViewer;
+			};
+			name = Release;
+		};
+		5A5BFE922193C056001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4463B3AE005DDF6AF5AAA00B /* Pods-Domain.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A5BFE932193C056001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9660959588C902CFD35CE8C /* Pods-Domain.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A5BFE962193C056001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Debug;
+		};
+		5A5BFE972193C056001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Release;
+		};
+		5A5BFEDD2193C0F1001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7477D65DCC343BF4DA8D3A /* Pods-NetworkPlatform.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetworkPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.NetworkPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A5BFEDE2193C0F1001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1788417E506C527BADB6AB7 /* Pods-NetworkPlatform.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetworkPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.NetworkPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A5BFEE02193C0F1001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetworkPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.NetworkPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Debug;
+		};
+		5A5BFEE12193C0F1001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetworkPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.NetworkPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Release;
+		};
+		5A5BFF372195A1FD001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1864AC183FBCDD8CC3B3A79 /* Pods-RealmPlatform.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.RealmPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A5BFF382195A1FD001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3B716C0611B2384882FD29 /* Pods-RealmPlatform.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmPlatform/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.RealmPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A5BFF392195A1FD001035B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealmPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.RealmPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Debug;
+		};
+		5A5BFF3A2195A1FD001035B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RealmPlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.vasconcelos.RealmPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistViewer.app/GistViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A5BFE232193AFFF001035B5 /* Build configuration list for PBXProject "GistViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFE4E2193B001001035B5 /* Debug */,
+				5A5BFE4F2193B001001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFE502193B001001035B5 /* Build configuration list for PBXNativeTarget "GistViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFE512193B001001035B5 /* Debug */,
+				5A5BFE522193B001001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFE532193B001001035B5 /* Build configuration list for PBXNativeTarget "GistViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFE542193B001001035B5 /* Debug */,
+				5A5BFE552193B001001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFE562193B001001035B5 /* Build configuration list for PBXNativeTarget "GistViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFE572193B001001035B5 /* Debug */,
+				5A5BFE582193B001001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFE912193C056001035B5 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFE922193C056001035B5 /* Debug */,
+				5A5BFE932193C056001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFE952193C056001035B5 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFE962193C056001035B5 /* Debug */,
+				5A5BFE972193C056001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFEDC2193C0F1001035B5 /* Build configuration list for PBXNativeTarget "NetworkPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFEDD2193C0F1001035B5 /* Debug */,
+				5A5BFEDE2193C0F1001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFEDF2193C0F1001035B5 /* Build configuration list for PBXNativeTarget "NetworkPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFEE02193C0F1001035B5 /* Debug */,
+				5A5BFEE12193C0F1001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFF3B2195A1FD001035B5 /* Build configuration list for PBXNativeTarget "RealmPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFF372195A1FD001035B5 /* Debug */,
+				5A5BFF382195A1FD001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5BFF3C2195A1FD001035B5 /* Build configuration list for PBXNativeTarget "RealmPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5BFF392195A1FD001035B5 /* Debug */,
+				5A5BFF3A2195A1FD001035B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A5BFE202193AFFF001035B5 /* Project object */;
+}
